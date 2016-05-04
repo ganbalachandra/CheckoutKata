@@ -4,7 +4,7 @@ Please take a couple of hours at most to tackle this task. Your solution will be
 
 ##The Task
 
-Please write a JSON API using Node.JS that returns the following structure...
+Please write an API using Node.JS that returns a JSON response in the following structure...
 
 ```
 [{
