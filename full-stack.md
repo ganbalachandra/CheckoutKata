@@ -38,9 +38,9 @@ You should then create a basic web application and add as many of the following 
 2. Ability to add a new city to the list
     * Provide basic validation
 3. Allow a user to mark a city as visited/unvisited
-4. Show a visual counter of a number of cities visited/unvisited
+4. Show a visual counter of the number of cities visited/unvisited
 5. Filter the cities by state (i.e. visited or unvisited)
 6. Sort the cities by state (i.e. visited or unvisited)
 
 You should aim to complete as many of these things as possible, demonstrating a good understanding of architecture, design and best practice.
-__Strong Testing methodologies (TDD and/or BDD) should be used.__
+__Testing methodologies (TDD and/or BDD) should be used.__
