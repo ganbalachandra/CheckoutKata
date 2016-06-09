@@ -12,8 +12,13 @@ The initial list should be served up from an endpoint that you create and should
   {
     "City": "Manchester",
     "Country": "UK",
-    "Attractions": ["football", "bars", "music"]
+    "Attractions": ["football", "bars"]
   },
+  {
+    "City": "Liverpool",
+    "Country": "UK",
+    "Attractions": ["football", "bars", "music"]
+  },  
   {
     "City": "York",
     "Country": "UK",
@@ -34,13 +39,14 @@ The initial list should be served up from an endpoint that you create and should
 
 You should then create a basic web application and add as many of the following pieces of functionality as you have time to:
 
-1. List all the cities retrieved from the endpoint you created
+1. Retrieve the cities from the endpoint you created and list them along with their country and attractions
 2. Ability to add a new city to the list
     * Provide basic validation
 3. Allow a user to mark a city as visited/unvisited
 4. Show a visual counter of the number of cities visited/unvisited
-5. Filter the cities by state (i.e. visited or unvisited)
-6. Sort the cities by state (i.e. visited or unvisited)
+5. Filter the cities by visited state (i.e. visited or unvisited)
+6. Sort the cities by visited state (i.e. visited or unvisited)
+7. Search for city by attraction or country
 
 You should aim to complete as many of these things as possible, demonstrating a good understanding of architecture, design and best practice.
 __Testing methodologies (TDD and/or BDD) should be used.__
