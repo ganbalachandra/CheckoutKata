@@ -1,8 +1,8 @@
-#The LateRooms Group Node task
+# The LateRooms Group Node task
 
 Please take a couple of hours at most to tackle this task. Your solution will be the basis for a discussion during our interview. 
 
-##The Task
+## The Task
 
 Please write an API using Node.JS that returns a JSON response in the following structure...
 
