@@ -1,8 +1,8 @@
-#The LateRooms Group full-stack task
+# The LateRooms Group full-stack task
 
 Please take as much time as you see appropriate to tackle this task. Your solution will be the basis for a discussion during our interview.
 
-##The task
+## The task
 
 The aim of the kata is to create a basic application to allow a user to record a list of cities they would like to visit.
 The initial list should be served up from an endpoint that you create and should use the following JSON data:
