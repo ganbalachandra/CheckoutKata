@@ -1,8 +1,8 @@
-#The LateRooms Group front-end task
+# The LateRooms Group front-end task
 
 Please take a couple of hours at most to tackle this task. Don't rush to 'finish' the task; that isn't really the overall aim, instead focus on demonstrating what you would consider good front-end practice. Your solution will be the basis for a discussion during our interview.
 
-##The task
+## The task
 
 Given the following JSON format (feel free to add more data if you wish)...
 
