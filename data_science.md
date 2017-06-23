@@ -1,11 +1,11 @@
 # LateRooms Data Science Task
 
 
-Please take a couple of hours at most to tackle this task. Don't rush to 'finish' the task; that isn't really the overall aim, instead focus on demonstrating what you would consider good data science practice. Your solution, and the decisions you made will be the basis for a discussion during our interview.
+Please take a couple of hours at most to tackle this task. Don't rush to 'finish' the task; that isn't really the overall aim, instead focus on demonstrating what you would consider good data science practice. Your solution, and the decisions you make will be the basis for a discussion during our interview.
 
 ## The Task
 
-Given the attached data:
+Given the data in hotel_engagement.csv.tar.gz:
 
 - How do LateRooms visitors use the our site?
 
