@@ -8,9 +8,13 @@ namespace Checkout
 {
     public class Checkout : ICheckout
     {
+        /// <summary>
+        /// fake it with hardcoded value
+        /// </summary>
+        /// <returns></returns>
         public int GetTotalPrice()
         {
-            throw new NotImplementedException();
+            return 0;
         }
 
         public void Scan(char item)

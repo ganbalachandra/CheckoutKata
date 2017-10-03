@@ -12,3 +12,5 @@ D:\interview-katas\CheckoutKata\Checkout.Test\bin\Debug\nunit.framework.xml
 D:\interview-katas\CheckoutKata\Checkout.Test\obj\Debug\Checkout.Test.csprojResolveAssemblyReference.cache
 D:\interview-katas\CheckoutKata\Checkout.Test\obj\Debug\Checkout.Test.dll
 D:\interview-katas\CheckoutKata\Checkout.Test\obj\Debug\Checkout.Test.pdb
+D:\interview-katas\CheckoutKata\Checkout.Test\bin\Debug\Checkout.dll
+D:\interview-katas\CheckoutKata\Checkout.Test\bin\Debug\Checkout.pdb

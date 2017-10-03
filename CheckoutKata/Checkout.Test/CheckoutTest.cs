@@ -19,8 +19,10 @@ namespace Checkout.Test
             [Test]
             public void Then_total_is_0()
             {
-               
-                var totalPrice = 1;
+                // Arrange
+                var checkout = new Checkout();
+
+                var totalPrice = checkout.GetTotalPrice();
 
                 //assert
                 Assert.That(totalPrice, Is.EqualTo(0));

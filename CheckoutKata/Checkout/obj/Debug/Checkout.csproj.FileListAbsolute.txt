@@ -1,0 +1,4 @@
+D:\interview-katas\CheckoutKata\Checkout\bin\Debug\Checkout.dll
+D:\interview-katas\CheckoutKata\Checkout\bin\Debug\Checkout.pdb
+D:\interview-katas\CheckoutKata\Checkout\obj\Debug\Checkout.dll
+D:\interview-katas\CheckoutKata\Checkout\obj\Debug\Checkout.pdb
