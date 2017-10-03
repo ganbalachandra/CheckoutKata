@@ -43,6 +43,10 @@ namespace Checkout.Test
                 Assert.That(totalPrice, Is.EqualTo(50));
            }
         }
+
+        /// <summary>
+        /// Scanned item B
+        /// </summary>
         [TestFixture]
         public class When_scanned_oneItem_and_B
         {
@@ -54,6 +58,26 @@ namespace Checkout.Test
                 var totalPrice = checkout.GetTotalPrice();
                 //assert
                 Assert.That(totalPrice, Is.EqualTo(30));
+            }
+        }
+
+        /// <summary>
+        /// Scan A,B,C,D
+        /// </summary>
+        public class When_scanned_RandomItems
+        {
+            [TestCase("ABCD")]
+            public void Then_total_is_115(string items)
+            {
+                var checkout = new Checkout();
+                int totalPrice = 0;
+                for (int i = 0; i < items.Length; i++)
+                {
+                    checkout.Scan(items[i]);
+                    totalPrice = checkout.GetTotalPrice();
+                }
+                // Assert
+                Assert.AreEqual(totalPrice, 115);
             }
         }
     }

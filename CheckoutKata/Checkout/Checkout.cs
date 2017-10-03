@@ -10,7 +10,7 @@ namespace Checkout
     {
         private readonly Dictionary<char, int> _prices ;
         public Checkout() {
-            _prices = new Dictionary<char, int>() { { 'A', 50 }, { 'B', 30 } };
+            _prices = new Dictionary<char, int>() { { 'A', 50 }, { 'B', 30 },{ 'C', 20 }, { 'D', 15 } };
 
         }
         public int Total { get; set; }
