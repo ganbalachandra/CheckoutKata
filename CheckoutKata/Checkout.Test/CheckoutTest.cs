@@ -31,17 +31,20 @@ namespace Checkout.Test
             }
         }
 
-        [TestFixture] //2nd checkout
+        /// <summary>
+        /// first item scanned and it's A
+        /// </summary>
+        [TestFixture] 
         public class When_scanned_oneItem_and_A
         {
             [Test]
             public void Then_total_is_50()
             {
                 var checkout = new Checkout();
+                checkout.Scan('A');
                 var totalPrice = checkout.GetTotalPrice();
                 //assert
                 Assert.That(totalPrice, Is.EqualTo(50));
-
            }
         }
     }

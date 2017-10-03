@@ -8,18 +8,21 @@ namespace Checkout
 {
     public class Checkout : ICheckout
     {
+
+        public int Total { get; set; }
         /// <summary>
-        /// fake it with hardcoded value
+        /// change the hardcoded total to some what dynamic
         /// </summary>
         /// <returns></returns>
         public int GetTotalPrice()
         {
-            return 0;
+            return Total;
         }
 
         public void Scan(char item)
         {
-            throw new NotImplementedException();
+            if (item == 'A')
+                Total += 50;
         }
     }
 }
