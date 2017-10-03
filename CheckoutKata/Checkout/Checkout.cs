@@ -23,6 +23,8 @@ namespace Checkout
         {
             if (item == 'A')
                 Total += 50;
+            if (item == 'B')
+                Total += 30;
         }
     }
 }

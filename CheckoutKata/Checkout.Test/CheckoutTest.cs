@@ -47,5 +47,18 @@ namespace Checkout.Test
                 Assert.That(totalPrice, Is.EqualTo(50));
            }
         }
+        [TestFixture]
+        public class When_scanned_oneItem_and_B
+        {
+            [Test]
+            public void Then_total_is_30()
+            {
+                var checkout = new Checkout();
+                checkout.Scan('B');
+                var totalPrice = checkout.GetTotalPrice();
+                //assert
+                Assert.That(totalPrice, Is.EqualTo(30));
+            }
+        }
     }
 }
