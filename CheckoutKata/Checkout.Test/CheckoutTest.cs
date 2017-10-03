@@ -16,18 +16,14 @@ namespace Checkout.Test
         /// </summary>
         public class When_scanned_no_items
         {
-
             [Test]
             public void Then_total_is_0()
             {
                 // Arrange
                 var checkout = new Checkout();
-
                 var totalPrice = checkout.GetTotalPrice();
-
                 //assert
                 Assert.That(totalPrice, Is.EqualTo(0));
-
             }
         }
 

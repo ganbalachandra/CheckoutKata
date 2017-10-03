@@ -8,7 +8,11 @@ namespace Checkout
 {
     public class Checkout : ICheckout
     {
+        private readonly Dictionary<char, int> _prices ;
+        public Checkout() {
+            _prices = new Dictionary<char, int>() { { 'A', 50 }, { 'B', 30 } };
 
+        }
         public int Total { get; set; }
         /// <summary>
         /// change the hardcoded total to some what dynamic
@@ -21,10 +25,7 @@ namespace Checkout
 
         public void Scan(char item)
         {
-            if (item == 'A')
-                Total += 50;
-            if (item == 'B')
-                Total += 30;
+            Total +=_prices[item];
         }
     }
 }
