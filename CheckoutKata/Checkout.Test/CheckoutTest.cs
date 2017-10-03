@@ -97,5 +97,22 @@ namespace Checkout.Test
                 Assert.AreEqual(totalPrice, 130);
             }
         }
+
+        public class When_scanned_Two_B
+        {
+            [TestCase("BB")]
+            public void Then_total_is_45(string items)
+            {
+                var checkout = new Checkout();
+                int totalPrice = 0;
+                for (int i = 0; i < items.Length; i++)
+                {
+                    checkout.Scan(items[i]);
+                }
+                totalPrice = checkout.GetTotalPrice();
+                // Assert
+                Assert.AreEqual(totalPrice, 45);
+            }
+        }
     }
 }
