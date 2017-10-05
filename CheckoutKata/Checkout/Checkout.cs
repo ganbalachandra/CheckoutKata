@@ -6,10 +6,16 @@ namespace Checkout
     public class Checkout : ICheckout
     {
         private readonly Dictionary<char, int> _prices ;
-        private readonly Dictionary<char, int> _NoOfSimilarItems;
-        public Checkout() {
+        private readonly Dictionary<char, int> _noOfSimilarItems;
+        private readonly BusinessRule _itemARule;
+        private readonly BusinessRule _itemBRule;
+        public Checkout()
+        {
             _prices = new Dictionary<char, int>() { { 'A', 50 }, { 'B', 30 },{ 'C', 20 }, { 'D', 15 } };
-            _NoOfSimilarItems = new Dictionary<char, int> { { 'A', 0 }, { 'B', 0 }, { 'C', 0 }, { 'D', 0 } };
+            _noOfSimilarItems = new Dictionary<char, int> { { 'A', 0 }, { 'B', 0 }, { 'C', 0 }, { 'D', 0 } };
+            _itemARule = new BusinessRule { Item = 'A', Count = 3, Discount = 20 };
+            _itemBRule = new BusinessRule { Item = 'B',  Count = 2, Discount = 15 };
+      
         }
         public int Total { get; set; }
         /// <summary>
@@ -24,18 +30,25 @@ namespace Checkout
         public void Scan(char item)
         {
             // increment item counter
-            _NoOfSimilarItems[item]++;
+            _noOfSimilarItems[item]++;
+            CalculateTotal(item);
+        }
+
+        private void CalculateTotal(char item)
+        {
             Total += _prices[item];
-            // business rule, if A and no of items 3 then discount amount 20
-            if (item == 'A' && _NoOfSimilarItems[item] == 3)
-            {
-                Total -= 20;
-            }
-            // business rule, if B and no of items 2 then discount amount 15
-            if (item == 'B' && _NoOfSimilarItems[item] == 2)
-            {
-                Total -= 15;
-            }
+            Total -= GetDiscount(item);
+        }
+
+        private int GetDiscount(char item)
+        {
+            if (_itemARule.Item == item && _itemARule.Count == _noOfSimilarItems[item])
+                return 20;
+
+            if (_itemBRule.Item == item && _itemBRule.Count == _noOfSimilarItems[item])
+                return 15;
+
+            return 0;
         }
     }
 }
